@@ -566,14 +566,6 @@ h2 {
   animation: pulse 2s infinite;
 }
 
-/*  Prevent Samsung zoom “ghost” */
-@supports (-webkit-touch-callout: none) {
-  .main-nav,
-  .whatsapp-float {
-    transform: translateZ(0);
-  }
-}
-
 .whatsapp-float img {
   width: 40px;
   height: 40px;
