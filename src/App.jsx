@@ -84,7 +84,7 @@ export default function App() {
     createMeta(
       "name",
       "description",
-      "Serving Dublin and nearby towns with professional interior and commercial painting — specialist work for cottages, fences and select exterior details. Free quotes."
+      "Professional interior painting and decorating services in Dublin. PureVision Painting & Decorating offers high-quality finishes, free quotes, and friendly service. Your space, your vision, our brush."
     );
     createMeta(
       "name",
