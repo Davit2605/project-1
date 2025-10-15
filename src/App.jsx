@@ -133,7 +133,7 @@ export default function App() {
         },
       ],
       description:
-        "Professional interior and commercial painting serving Dublin and nearby towns. Specialist cottage and fence work available. Free quotes.",
+        "Professional interior and commercial painting serving Dublin and nearby towns. Free quotes.",
       url: window.location.origin,
     };
     const script = document.createElement("script");
