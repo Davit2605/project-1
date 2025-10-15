@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import logo from "../src/assets/logo.png";
 import hero_pic from "../src/assets/hero-pic.png";
-import bedroom from "../src/assets/bedroom.png";
-import living_room from "../src/assets/living-room.png";
-import commercial_office from "../src/assets/commercial-office.png";
 
 export default function App() {
   const [navOpen, setNavOpen] = useState(false);
@@ -452,28 +449,24 @@ export default function App() {
 
           <div className="gallery">
             <figure className="thumb">
-              {/* <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+              { <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
                 <rect width="100%" height="100%" fill="#f6f6f6" />
                 <rect width="100%" height="100%" fill="#e9e9e9" />
-              </svg> */}
-              <img src={living_room} alt="Living-room picture" />
+              </svg> }
+
               <figcaption>Interior — Living Room</figcaption>
             </figure>
 
             <figure className="thumb">
-              {/* <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+              { <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
                 <rect width="100%" height="100%" fill="#dff3ff" />
-              </svg> */}
-
-              <img src={bedroom} alt="Bedroom picture" />
+              </svg> }
               <figcaption>Interior — Bedroom</figcaption>
             </figure>
-
             <figure className="thumb">
-              {/* <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+              { <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
                 <rect width="100%" height="100%" fill="#eef7f0" />
-              </svg> */}
-              <img src={commercial_office} alt="Commercial Office picture" />
+              </svg> }
               <figcaption>Commercial Office</figcaption>
             </figure>
           </div>
