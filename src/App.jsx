@@ -86,7 +86,7 @@ export default function App() {
     createMeta(
       "name",
       "keywords",
-      "painting dublin, interior painting, commercial painting, cottage painting, fence painting, cabinet refinishing, color consultancy"
+      "painting dublin, interior painting, commercial painting, fence painting, cabinet refinishing, color consultancy"
     );
     createMeta("name", "robots", "index,follow");
     createMeta("name", "theme-color", "#0f3240");
