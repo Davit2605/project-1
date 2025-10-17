@@ -209,7 +209,7 @@ export default function App() {
           >
             <img
               src={logo}
-              alt="Pure Vision Painting Logo"
+              alt="PureVision Painting Dublin Logo"
               className="brand-logo"
             />
             <span className="brand-text">
@@ -371,7 +371,7 @@ export default function App() {
             </div>
 
             <div className="hero-image" aria-hidden="true">
-              <img src={hero_pic} className="hero-pic" alt="hero_pic" />
+              <img src={hero_pic} className="hero-pic" alt="Professional Painters working on interior in Dublin" />
             </div>
           </div>
         </section>
