@@ -240,11 +240,6 @@ name="twitter:image"
 content="https://www.purevisionpainting.ie/logo.png"
 />
 </Helmet>
-
-{/* Your existing site content */}
-<div className="App">
-{/* ... your components ... */}
-
       {/* HEADER */}
       <header className="site-header">
         <div className="container header-inner">
@@ -646,7 +641,7 @@ content="https://www.purevisionpainting.ie/logo.png"
         </div>
   
       )}
-  </div>
+ 
     </>
   );
 }
