@@ -244,7 +244,7 @@ content="https://www.purevisionpainting.ie/logo.png"
 {/* Your existing site content */}
 <div className="App">
 {/* ... your components ... */}
-</div>
+
       {/* HEADER */}
       <header className="site-header">
         <div className="container header-inner">
@@ -644,6 +644,7 @@ content="https://www.purevisionpainting.ie/logo.png"
           {status === "error" &&
             "❌ Oops! Something went wrong. Please try again."}
         </div>
+  </div>
       )}
     </>
   );
