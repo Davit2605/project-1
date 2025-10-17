@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
 import "./App.css";
 import logo from "../src/assets/logo.png";
 import hero_pic from "../src/assets/hero-pic.png";
@@ -65,53 +64,53 @@ export default function App() {
     // tags we will create (so we can remove them on cleanup)
     const created = [];
 
-    // convenience creator for meta tags (name OR property attr)
-    // const createMeta = (attrName, attrValue, content) => {
-    //   const m = document.createElement("meta");
-    //   m.setAttribute(attrName, attrValue);
-    //   m.setAttribute("content", content);
-    //   document.head.appendChild(m);
-    //   created.push(m);
-    //   return m;
-    // };
+    convenience creator for meta tags (name OR property attr)
+    const createMeta = (attrName, attrValue, content) => {
+      const m = document.createElement("meta");
+      m.setAttribute(attrName, attrValue);
+      m.setAttribute("content", content);
+      document.head.appendChild(m);
+      created.push(m);
+      return m;
+    };
 
-    // // basic tags
-    // document.title =
-    //   "Pure Vision Painting — Dublin | Interior & Commercial Painting";
+    // basic tags
+    document.title =
+      "Pure Vision Painting — Dublin | Interior & Commercial Painting";
 
-    // createMeta(
-    //   "name",
-    //   "description",
-    //   "Professional interior painting and decorating services in Dublin. PureVision Painting & Decorating offers high-quality finishes, free quotes, and friendly service. Your space, your vision, our brush."
-    // );
-    // createMeta(
-    //   "name",
-    //   "keywords",
-    //   "painting dublin, interior painting, commercial painting, fence painting, cabinet refinishing, color consultancy"
-    // );
-    // createMeta("name", "robots", "index,follow");
-    // createMeta("name", "theme-color", "#0f3240");
+    createMeta(
+      "name",
+      "description",
+      "Professional interior painting and decorating services in Dublin. PureVision Painting & Decorating offers high-quality finishes, free quotes, and friendly service. Your space, your vision, our brush."
+    );
+    createMeta(
+      "name",
+      "keywords",
+      "painting dublin, interior painting, commercial painting, fence painting, cabinet refinishing, color consultancy"
+    );
+    createMeta("name", "robots", "index,follow");
+    createMeta("name", "theme-color", "#0f3240");
 
-    // // Open Graph (social)
-    // createMeta("property", "og:title", "Pure Vision Painting — Dublin");
-    // createMeta(
-    //   "property",
-    //   "og:description",
-    //   "Professional interior and commercial painting serving Dublin and nearby towns. Request a free quote."
-    // );
-    // createMeta("property", "og:type", "website");
-    // createMeta("property", "og:url", window.location.href);
-    // createMeta("property", "og:image", getAbsoluteUrl(logo));
+    // Open Graph (social)
+    createMeta("property", "og:title", "Pure Vision Painting — Dublin");
+    createMeta(
+      "property",
+      "og:description",
+      "Professional interior and commercial painting serving Dublin and nearby towns. Request a free quote."
+    );
+    createMeta("property", "og:type", "website");
+    createMeta("property", "og:url", window.location.href);
+    createMeta("property", "og:image", getAbsoluteUrl(logo));
 
-    // // Twitter card
-    // createMeta("name", "twitter:card", "summary_large_image");
-    // createMeta("name", "twitter:title", "Pure Vision Painting — Dublin");
-    // createMeta(
-    //   "name",
-    //   "twitter:description",
-    //   "Interior, commercial and select exterior painting services. Free quotes."
-    // );
-    // createMeta("name", "twitter:image", getAbsoluteUrl(logo));
+    // Twitter card
+    createMeta("name", "twitter:card", "summary_large_image");
+    createMeta("name", "twitter:title", "Pure Vision Painting — Dublin");
+    createMeta(
+      "name",
+      "twitter:description",
+      "Interior, commercial and select exterior painting services. Free quotes."
+    );
+    createMeta("name", "twitter:image", getAbsoluteUrl(logo));
 
     // canonical link
     const linkCanonical = document.createElement("link");
@@ -195,51 +194,6 @@ export default function App() {
 
   return (
     <>
-
-      <Helmet>
-{/* 🏠 Page title */}
-<title>PureVision Painting — Dublin | Interior Painting & Decorating</title>
-
-{/* 🧾 Description */}
-<meta
-name="description"
-content="Professional interior painting and decorating in Dublin and nearby towns. Transform your home with PureVision Painting — your space, your vision, our brush. Free quotes available."
-/>
-
-{/* 🔑 Keywords */}
-<meta
-name="keywords"
-content="painters Dublin, interior painting Dublin, decorating Dublin, house painters Dublin, PureVision Painting, painting company Dublin, home decorating, free painting quotes"
-/>
-
-{/* 🧭 Robots */}
-<meta name="robots" content="index,follow" />
-
-{/* 🟦 Open Graph (Facebook & social preview) */}
-<meta property="og:title" content="PureVision Painting — Dublin" />
-<meta
-property="og:description"
-content="Professional interior painting and decorating in Dublin and nearby towns. Free quotes from PureVision Painting."
-/>
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.purevisionpainting.ie/" />
-<meta
-property="og:image"
-content="https://www.purevisionpainting.ie/logo.png" {/* replace with your logo URL */}
-/>
-
-{/* 🐦 Twitter Card */}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="PureVision Painting — Dublin" />
-<meta
-name="twitter:description"
-content="Interior painting & decorating services in Dublin. Your space, your vision, our brush."
-/>
-<meta
-name="twitter:image"
-content="https://www.purevisionpainting.ie/logo.png"
-/>
-</Helmet>
       {/* HEADER */}
       <header className="site-header">
         <div className="container header-inner">
