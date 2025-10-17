@@ -644,8 +644,9 @@ content="https://www.purevisionpainting.ie/logo.png"
           {status === "error" &&
             "❌ Oops! Something went wrong. Please try again."}
         </div>
-  </div>
+  
       )}
+  </div>
     </>
   );
 }
