@@ -307,6 +307,27 @@ export default function App() {
                   Reviews
                 </a>
               </li>
+              <li>
+                {" "}
+                <a
+                  href="#about"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.querySelector("#about");
+                    if (section) {
+                      const yOffset = -95;
+                      const y =
+                        section.getBoundingClientRect().top +
+                        window.pageYOffset +
+                        yOffset;
+                      window.scrollTo({ top: y, behavior: "smooth" });
+                    }
+                    setTimeout(() => setNavOpen(false), 300);
+                  }}
+                >
+                  About Us
+                </a>
+              </li>
 
               <li>
                 {" "}
@@ -495,6 +516,25 @@ export default function App() {
             ))}
           </div>
         </section>
+      <section id="about" className="about">
+          <h2>About Us</h2>
+          <p>
+            <strong>PureVision Painting & Decorating</strong> based in Dublin,
+            provides professional interior and commercial painting services for
+            homes and businesses. We’re a trusted, local company committed to
+            quality craftsmanship, clean finishes, and customer satisfaction.
+          </p>
+          <p>
+            Whether you’re refreshing a single room or giving your entire
+            property a new look, our expert painters deliver beautiful, lasting
+            results using high-quality materials and attention to detail.
+          </p>
+          <p>
+            <strong>Serving:</strong> Dublin, Swords, Lucan, Tallaght,
+            Blanchardstown, and surrounding areas.
+          </p>
+        </section>
+        
         {/* CTA BANNER */}
         <section className="cta-banner">
           <div className="container cta-inner">
