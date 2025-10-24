@@ -157,6 +157,8 @@ export default function App() {
         <title>
           PureVision Painting — Dublin | Interior Painting & Decorating
         </title>
+        
+        <link rel="canonical" href="https://www.purevisionpainting.ie" />
 
         {/* 🧾 Description */}
         <meta
