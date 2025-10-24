@@ -71,11 +71,11 @@ export default function App() {
 
 
     // canonical link
-    const linkCanonical = document.createElement("link");
-    linkCanonical.setAttribute("rel", "canonical");
-    linkCanonical.setAttribute("href", window.location.href);
-    document.head.appendChild(linkCanonical);
-    created.push(linkCanonical);
+    // const linkCanonical = document.createElement("link");
+    // linkCanonical.setAttribute("rel", "canonical");
+    // linkCanonical.setAttribute("href", window.location.href);
+    // document.head.appendChild(linkCanonical);
+    // created.push(linkCanonical);
 
     // JSON-LD structured data (Local business / Home & Construction)
     const jsonLd = {
@@ -157,7 +157,8 @@ export default function App() {
         <title>
           PureVision Painting — Dublin | Interior Painting & Decorating
         </title>
-
+          <link rel="canonical" href="https://www.purevisionpainting.ie" />
+        
         {/* 🧾 Description */}
         <meta
           name="description"
