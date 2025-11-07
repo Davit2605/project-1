@@ -161,9 +161,9 @@ export default function App() {
         
         {/* 🧾 Description */}
         <meta
-          name="description"
-          content="Professional interior painting and decorating in Dublin and nearby towns. Transform your home with PureVision Painting — your space, your vision, our brush. Free quotes available."
-        />
+      name="description"
+      content="PureVision Painting offers professional interior painting and decorating services in Dublin. Experienced painters for homes, apartments, and commercial spaces — affordable prices, clean finishes, and free quotes available."
+      />
 
         {/* 🔑 Keywords */}
         <meta
